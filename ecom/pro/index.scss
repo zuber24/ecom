@@ -1,0 +1,643 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  height: 100vh;
+  .upperHeader{
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+
+    .firstCild span{
+      padding:  0 .5em;
+    }
+    .firstCild span:first-child{
+      border-right: 2px solid black;
+      height: 100%;
+    }
+
+    .social{
+      i{
+        margin:0 .5em;
+      }
+      .facebook{
+        color:blue
+      }
+      .twitter{
+        color: rgb(75, 75, 199);
+      }
+      .google-plus{
+        color: red;
+      }
+      .linkedin{
+        color: rgb(75, 75, 199);
+      }
+      .instagram{
+        color:pink
+      }
+    }
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(222, 228, 228);
+    font-size: .8em;
+    height: 5em;
+    align-items: center;
+    text-transform: uppercase;
+
+    .logo img{
+      width: 8em;
+      height: 4em;
+    }
+    
+    .links{
+      ul{
+        display: flex;
+        list-style: none;
+        .displaycol{
+          position: absolute;
+          li{
+            display: none;
+          }
+        }
+        .hvr{
+          transition: all .2s linear .5s;
+        }
+        .hvr:hover + .displaycol li{
+          position: relative;
+          top:1em;
+          z-index: 999;
+          padding: .2em .5em;
+          background-color: white;
+          right:-16.5em;
+          display: flex;
+          flex-direction: column;
+        }
+        li{
+          margin: 0 .5em;
+          a{
+            text-decoration: none;
+          }
+        }
+        input{
+          padding: .5em;
+        }
+      }
+    }
+  }
+
+  .upperData{
+    margin: 2em 0;;
+    img{
+      width: 100vw;
+    }
+
+    .child{
+      top:-20em;
+      position: relative;
+      background-color: white;
+      opacity: 0.8;
+      .subchild{
+        width: 28em;
+        text-align: right;
+        margin:0 0 0 19em;
+        padding: 2em;
+      }
+    }
+  }
+
+  .data{
+    margin:-8em 0 6em 0;
+    display: flex;
+    justify-content: space-around;
+    .datas p {
+      width: 12em;
+    }
+    a{
+      text-decoration: none;
+    }
+    .subdata{
+      display: flex;
+      .subdataInfo{
+        margin:  .5em;
+        text-align:center;
+        padding:2em 1em;
+        border: .5px solid black;
+        box-shadow: 4px -2px 5px gray;
+        display: flex;
+        flex-direction: column;
+        img{
+          width: 7vw;
+          border-radius: 50%;
+          margin: auto;
+        }
+        span{
+          width: 10em;
+        }
+      }
+    }
+  }
+
+  .pics{
+    margin: 2em 6em;
+    .picshead{
+      display: flex;
+      justify-content: space-between;
+      h3{
+        border-bottom: 2px solid orange;
+        width:20%;
+      }
+      a{
+        padding: .5em 1.5em;
+        background-color: rgb(235, 151, 25);
+      }
+    }
+    .datas{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .arrow{
+      font-size: 2em;
+    }
+    .girlsdata{
+      background-color: lightgray ;
+      width: 20%;
+      margin: .7em;
+      img{
+        width: 15vw;;
+        margin: 1em 0 0 1.1em;
+      }
+      .girlsdatas{
+        margin: auto;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+      }
+      .girlsdatasspan{
+        color: rgb(255, 165, 0);
+        font-size: 1.5em;
+      }
+      .girlsdatasspan2{
+        margin: 1em 0 ;
+        font-size: .7em;
+      }
+      .dash{
+        font-size: .7em ;
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  .processing{
+    margin: 0 6em;
+    h3{
+      border-bottom: 2px solid orange;
+      margin:auto;
+      text-align: center;
+      width: 20vw;
+    }
+    .flex{
+      display: flex;
+      margin:2em 1em;
+      div{
+        margin: 0 1em
+      }
+      .hovelay{
+        margin:-3em 1em ;
+        width: 13.5em;
+        height:20em;
+        position: relative;
+        top:-18em;
+        border:2px solid orange;
+        padding: 3em 1em;
+        color: white;
+        background-color: rgb(26, 24, 24);
+        opacity: .8;
+        h4{
+          margin: 1em 0 ;
+        }
+        a{
+          position: relative;
+          bottom:-3em;
+          text-decoration: none;
+          padding: 1em;
+          background-color: orange;
+        }
+      }
+    }
+  }
+
+  .Services{
+    display: flex;
+    background-color: rgb(238, 201, 201);
+    margin: -12em 0 5em 0;
+    .div{display: flex;
+      .commonitem{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width:11vw;
+        margin: auto 3em;
+        h4, i{
+          margin:.5em 0;
+          text-align: center;
+        }
+        p{
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .companyinfo{
+    img{
+      width: 100vw;
+    }
+    .whitebg{
+      padding: 1em;
+      background-color: white;
+      opacity: 1;
+      position: relative;
+      top:-20em;
+      .companyinfofirstChild{
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+        img{
+          border-right: 1px solid black;
+          padding: 0 2em 0 0 ;
+          margin: 0 2em;
+        }
+        .companyinfolastChild{
+          text-align: center;
+          margin: auto;
+          p{
+            width:20em;
+            margin:1.5em 0;
+          }
+        }
+      }
+    }
+  }
+
+  footer{
+    margin: -5em 0 6em 0;
+    .socials{
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      width: 14vw;
+      border-radius: 2em;
+      margin: 1em auto;
+      padding: 1em 0;
+      position: relative;
+      top:-2.75em;
+      i{
+        padding: 0 .5em;
+      }
+    }
+    .hrline{
+      width: 98vw;;
+      margin: 2em auto;
+
+    }
+    .mainfooter{
+      display: flex;
+      justify-content: space-between;
+      margin:2em 6em;
+      .footerlogos{
+        width: 20vw;
+        font-weight: bold;
+        h2,p {
+          margin: .5em 0;
+        }
+      }
+
+      .search{
+        div{
+          border: 3px solid black;
+          width:100%
+        }
+
+        input{
+          border: none;
+          outline: none;
+          padding: 1em .2em;
+          align-items: center;
+          justify-content: center;
+        }
+        a i{
+          position: absolute;
+          margin:0 0 0 -2.5em;
+          background-color: orange;
+          padding: .8em;
+        }
+      }
+
+      .quickLinks{
+        li{
+          list-style: none;
+          margin: .4em 0;;
+          a{
+            text-decoration: none;
+            color: inherit;
+          }
+        }
+      }
+
+      .Newsletter{
+        width: 20vw;
+        h3{
+          margin: 0 0 1em 0;
+        }
+        input{
+          padding: .7em 0 .7em .5em ;
+          width: 100%;
+        }
+        a{
+          padding: 1em;
+          width: 100%;
+          background-color: orange;
+          position: relative;
+          top:1.5em;
+        }
+      }
+    }
+
+    .endlingtag{
+      text-align: center;
+      padding: .5em 0;
+    }
+  }
+}
+
+@media(min-width:769px) and (max-width:1024px){
+  body{
+    .data{
+      display:flex;
+      flex-direction: column;
+      .datas{
+       margin: 0 0 0 6em;
+      }
+      .subdata{
+        margin: auto;
+      }
+    }
+    .pics{
+      .girlsdata{
+        img{
+          width: 13vw
+        }
+      }
+    }
+    .processing{
+      .flex{
+        margin:2em auto;
+        div{
+          img{
+            width:12em
+          }
+        }
+        .hovelay{
+          margin: 2em 1em;
+          width: 10em;
+          height: 17em;
+          a{
+            position: absolute;
+            bottom: -4em;
+          }
+        }
+      }
+    }
+    .Services{
+      .commonitem{
+      margin: auto 2em;
+      }
+    }
+    .companyinfo{
+      margin:-2em 0 -4em 0 ;
+      .whitebg{
+        top: -17em;
+      }
+    }
+    footer{
+      margin:1em;
+      width:98vw;
+      .mainfooter{
+        margin: 2em 1em;
+      }
+    }
+  }
+}
+
+@media(min-width:426px) and (max-width:768px){
+  body{
+    .upperData{
+      .child{
+        position: relative;
+        top:-15em;
+      }
+    }
+    .data{
+      display:flex;
+      flex-direction: column;
+      .datas{
+       margin: 0 0 0 6em;
+      }
+      .subdata{
+        margin: auto;
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 1fr 1fr;
+        .subdataInfo{
+          img{
+            width:14vw
+          }
+          span{
+            width:25vw;
+            margin: auto;
+          }
+        }
+      }
+    }
+    .pics{
+      .datas{
+        margin: 2em auto;
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 400px;
+        a{
+          display: none;
+        }
+        .girlsdata{
+          width:75%;
+          img{
+            width:25vw;
+          }
+        }
+      }
+    }
+    .processing{
+      .flex{
+        margin: 2em auto;
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 380px 380px;
+        div{
+          margin: auto;
+        }
+      }
+    }
+    .Services{
+      margin: 5em auto;
+      display: grid;
+      grid-template-columns: 250px 250px;
+    }
+    .companyinfo{
+      .whitebg{
+        position: relative;
+        top:-14em;
+        margin:auto;
+        .companyinfofirstChild{
+          width:100vw;
+        }
+      }
+    }
+    footer{
+      .socials{
+        width:11em;
+      }
+      .mainfooter{
+        margin:2em 1em;
+      }
+    }
+  }
+}
+
+@media(min-width:0 ) and (max-width:425px){
+  body{
+    .upperHeader{
+      .social{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        div{
+          width:45vw;
+        }
+      }
+    }
+    .header{
+      height: 19em;
+      
+      .links{
+        ul{
+          display: flex;
+          flex-direction: column;
+          li{
+            padding: .5em 0;
+
+          }
+        }
+      }
+    }
+    .upperData{
+      .child{
+        .subchild{
+          margin: 17em 0 0 -4em;
+        }
+      }
+    }
+    .data{
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 0 5%;
+      .subdata{
+        display: flex;
+        flex-direction: column;
+        .subdataInfo{
+          img{
+            width:25vw;
+          }
+          span{
+            width: 50vw;;
+            margin: auto;
+          }
+        }
+      }
+    }
+    .pics{
+      .datas{
+        margin: 2em auto;
+        display: grid;
+        grid-template-columns: 300px ;
+        grid-template-rows: 400px;
+        a{
+          display: none;
+        }
+        .girlsdata{
+          width:75%;
+          img{
+            width:44vw;
+          }
+        }
+      }
+    }
+    .processing{
+      .flex{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .Services{
+      height:40em;
+      .div{
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 60vw 60vw;
+      }
+    }
+    .companyinfo{
+      .whitebg{
+        .companyinfofirstChild{
+          img{
+            display: none;
+          }
+        }
+        .companyinfolastChild{
+          position: relative;
+          top:3em;
+        }
+      }
+    }
+    footer{
+      .socials{
+        width: 50vw;;
+      }
+      .mainfooter{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin: 2em;
+        padding: 2em;
+        .footerlogos, .Newsletter{
+          width: 75vw;;
+        }
+        .search{
+          a{
+            i{
+              margin:0 0 0 4.2em;
+            }
+          }
+        }
+      }
+    }
+  }
+} 
